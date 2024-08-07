@@ -4,9 +4,7 @@ struct emp{
 	int jobid;
 	char name[90];
 };
-//int n;
-//printf("Enter the number of employees: \n");
-//scanf("%d",&n);
+
 struct emp emp1[num];
 
 	int f=-1;
@@ -44,13 +42,15 @@ struct emp emp1[num];
 		}
 		else{
 			f++;
+			printf("The removed element: %d\n",emp1[f].jobid);	
+			printf("The name is: %s\n",emp1[f].name);
 		}
 	}
 	
 	void display(){
 		for(int i=f+1;i<=r;i++){
-			printf("Jobid: %d\n",emp1[i].jobid);
-			printf("Name: %s\n",emp1[i].name);
+			printf("Removed Jobid: %d\n",emp1[i].jobid);
+			printf("Removed Name: %s\n",emp1[i].name);
 		} 
 	}
 
@@ -69,7 +69,7 @@ int main(){
 	}*/
 	int ch;
     do{
-	printf("Menu is: \n 1.Add element.\n 2.Delete element\n 3.check if queue is empty.\n4.Check if queue is full.\n");
+	printf("Menu is: \n 1.Enqueue.\n 2.Dequeue\n 3.check if queue is empty.\n4.Check if queue is full.\n");
 	printf("Enter your choice: \n");
 	scanf("%d",&ch);
 	switch(ch){
@@ -97,8 +97,5 @@ int main(){
 			break;
     }
     }while(ch!=5);
-	
-	
-	
 	return 0;
 }
