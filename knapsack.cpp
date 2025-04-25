@@ -9,6 +9,7 @@ class knapsack{
         int items[20][2];
         int ka;
         int max_profit;
+
     public:
         int get_knapsack_amount(){
             int amount;
