@@ -6,7 +6,7 @@ class rev{
     int arr[20];
     public:
         rev(){
-            cout<<"Enter the no. of eleemnets: "<<endl;
+            cout<<"Enter the no. of elemnets: "<<endl;
             cin>>n;
         }
 
